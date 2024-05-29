@@ -33,6 +33,33 @@
         body {
   font-family: 'Lato', sans-serif;
 }
+        #mySidenav a {
+          position: absolute;
+          left: -80px;
+          transition: 0.3s;
+          padding: 15px;
+          width: 100px;
+          text-decoration: none;
+          font-size: 20px;
+          color: white;
+          border-radius: 0 5px 5px 0;
+        }
+        #mySidenav a:hover {
+          left: 0;
+        }
+        
+        #about {
+          top: 20px;
+          background-color: #04AA6D;
+        }
+        #blog {
+          top: 80px;
+          background-color: #2196F3;
+        }
+        #projects {
+          top: 140px;
+          background-color: #f44336;
+        }
   </style>
   </head>
   <body>
@@ -126,6 +153,11 @@
       <div class="column" style="background-color:#EBF5FB;">
         <h2>Suur tegu</h2>
         <p>Some text..</p>
+      </div>
+      <div id="mySidenav" class="sidenav">
+        <a href="#" id="Helen">About</a>
+        <a href="#" id="Hele-Mai">Blog</a>
+        <a href="#" id="Suur tegu">Projects</a>
       </div>
   </body>
 </html>
