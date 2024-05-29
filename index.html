@@ -45,9 +45,9 @@
   </head>
   <body>
     <nav>
-      <a href="#">Helen</a>
-      <a href="#">Hele-Mai</a>
-      <a href="#">Suur tegu</a>
+      <a href="#" onclick="scrollToSection('helen')">Helen</a>
+      <a href="#" onclick="scrollToSection('hele-mai')">Hele-Mai</a>
+      <a href="#" onclick="scrollToSection('tegu')">Suur tegu</a>
     </nav>
     <div class="header">
       <h1>HeHe</h1>
@@ -140,5 +140,12 @@
         <h2>Suur tegu</h2>
         <p>Some text..</p>
       </div>
+      
+      <script>
+        function scrollToSection(sectionId) {
+          var section = document.getElementById(sectionId);
+          section.scrollIntoView({ behavior: 'smooth' });
+        }
+      </script>
   </body>
 </html>
